@@ -1,0 +1,144 @@
+:root {
+  --background1: #454545;
+  --text-color: whitesmoke;
+  --text-color2: #f3c376;
+  --bg-color2: #222222;
+  --bg-color3: #edede9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  min-height: 212px;
+}
+#logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 45px;
+  color: whitesmoke;
+  text-transform: none;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.navbar-toggler {
+  color: var(--text-color) !important;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#nav1 {
+  height: 70px;
+}
+#nav2 {
+  height: 70px;
+}
+.first {
+  color: var(--text-color) !important;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.first:hover {
+  color: var(--text-color2) !important;
+}
+nav ul a {
+  color: var(--text-color) !important;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.dropdown-item {
+  color: var(--background1) !important;
+}
+.dropdown-item:hover {
+  color: #f3c376 !important;
+}
+/* Search input nav */
+.input-box {
+  position: relative;
+  height: 50px;
+  max-width: 28%;
+  width: 100%;
+  margin: 0 40px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.input-search {
+  position: relative;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0 15px 0 65px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  background-color: #fff;
+}
+
+.search-icon {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: #333;
+  font-size: 30px;
+  width: 60px;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  height: max-content;
+  background-color: var(--bg-color2);
+}
+footer h2 {
+  color: var(--text-color);
+}
+.contact-name,
+.contact-email,
+.contact-message {
+  z-index: 5;
+  max-width: 100%;
+  width: 400px;
+  background-color: var();
+  border: 1px solid var(--text-color2);
+  color: var(--text-color);
+  background-color: var(--bg-color2);
+  padding: 5px;
+}
+
+.contact-text h2 {
+  color: var(--text-color2);
+}
+.contact-text {
+  color: var(--text-color);
+}
+.ct-number,
+.ct-location,
+.ct-email {
+  color: var(--text-color);
+  vertical-align: middle;
+}
+
+.bi-facebook,
+.bi-instagram,
+.bi-twitter {
+  margin: 10px;
+  color: var(--text-color);
+}
+.copyright {
+  color: var(--text-color);
+}
+.message-btn {
+  background-color: var(--text-color2);
+}
