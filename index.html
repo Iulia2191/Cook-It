@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/main.css">
 
-        <title>Idei de retete</title>
+        <title>Cook It</title>
     </head>
     <body>
         <header>
@@ -131,17 +131,14 @@
                                     <h5>Ciocanele de pui la cuptor</h5>
                                     <p class="card-text">Rețeta delicioasă de
                                         pui pane la cuptor</p>
-                                    <span class="material-symbols-outlined time">
-                                        schedule
-                                    </span> 45 minute
-                                    <br>
-                                    <button class="btn btn-top my-3">Vezi
+                                  
+                                    <button class="btn btn-top">Vezi
                                         rețeta</button>
-
                                 </div>
+                              
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-2">
                             <div class="card mx-auto">
                                 <img class="card-img-top"
                                     src="/img/shakshouka-detaliu.jpg"
@@ -150,14 +147,11 @@
                                     <h5>Shakshouka cu roșii si ardei</h5>
                                     <p class="card-text"> Rețeta delicioasă
                                         pentru micul dejun</p>
-                                    <span class="material-symbols-outlined time">
-                                        schedule
-                                    </span> 30 minute
-                                    <br>
-                                    <button class="btn btn-top my-3">Vezi
+                                   
+                                    <button class="btn btn-top">Vezi
                                         rețeta</button>
-
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -169,14 +163,10 @@
                                     <h5>Brioșe cu ciocolată</h5>
                                     <p class="card-text">Brioșe pufoase cu
                                         ciocolată și cacao</p>
-                                    <span class="material-symbols-outlined time">
-                                        schedule
-                                    </span> 25 minute
-                                    <br>
-                                    <button class="btn btn-top my-3">Vezi
-                                        rețeta</button>
-
+                                        <button class="btn btn-top">Vezi
+                                            rețeta</button>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -202,7 +192,7 @@
         <footer>
             <div class="container-fluid ">
                 <div class="row mx-auto">
-                    <div class="col social-icons my-auto">
+                    <div class="col-12 col-sm-12 col-md-6 col-xl-4 social-icons my-auto">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             width="20" height="20"
                             fill="currentColor"
@@ -229,21 +219,25 @@
                         </svg>
                     </div>
                     
-                    <div class="col copyright-container my-auto">
+                    <div class="col-12 col-sm-12 col-md-6 col-xl-4 copyright-container my-auto">
                         <p class="copyright"> &#169; Copyright 2023
                             - Cook
                             It</p>
                     </div>
                     
-                    <div class="col newsletter">
-                        
+                    <div class="col-12 col-sm-12 col-md-6 col-xl-4 newsletter">
+                        <div class="newsletter-container">
                         <p>Dacă vrei să afli noutăți despre rețele noastre,
                             abonează-te la newsletter-ul nostru.</p>
-                        <input type="email" placeholder="Email"
+                        <input type="email" placeholder="Email" id="newsletterEmail"
                             class="newsletter-input">
-                        <button class="btn-newsletter">Submit</button>
+                        <button class="btn-newsletter" type="submit">Submit</button>
+                        <div class="subscribe-error-message"></div>
+                        </div>
+                        <div class="submit-container"></div>
                    
-                </div>
+                    </div>
+                
                 </div>
                 </div>
                 
@@ -264,7 +258,8 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-
+        <scrip src="./js/main.js"></scrip>
         <script src="./js/index.js"></script>
+        
     </body>
 </html>

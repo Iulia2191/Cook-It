@@ -108,7 +108,7 @@ body {
   color: var(--bg-color3);
 }
 .card {
-  z-index: 5;
+  z-index: 6;
   max-width: 100%;
   width: 350px;
   height: 480px;
@@ -116,6 +116,7 @@ body {
   text-align: center;
   color: var(--bg-color3);
   border: none;
+  margin-top: 20px;
 }
 
 .card-img-top {
@@ -124,15 +125,10 @@ body {
   object-fit: cover;
 }
 
-.top-three .time {
-  vertical-align: middle;
-  padding-right: 10px;
-}
 .top-three p {
   padding-bottom: 10px;
 }
 .btn-top {
-  margin: 1rem;
   padding: 0.3rem 1rem;
   background: var(--text-color2);
   font-family: 'Poppins';
@@ -153,8 +149,8 @@ body {
   height: 80vh;
 }
 .today-card {
-  padding-top: 7%;
-  padding-bottom: 7%;
+  padding-top: 10%;
+  padding-bottom: 5%;
   margin-right: 60px;
 }
 .special-card {

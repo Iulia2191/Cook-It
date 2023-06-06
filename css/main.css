@@ -99,11 +99,12 @@ nav ul a {
 /* Footer */
 footer {
   margin-top: auto;
-  height: 20vh;
+  height: max-content;
   background-color: var(--bg-color2);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3%;
 }
 footer p {
   text-align: justify;
@@ -124,23 +125,23 @@ footer p {
 }
 .newsletter {
   z-index: 5;
+  padding-top: 10px;
 }
 .newsletter-input {
-  padding: 6px;
-  position: relative;
   background-color: var(--bg-color3);
   border: 1px solid var(--text-color2);
-  height: 40px;
-  color: var(--bg-color3);
+  padding: 5px;
+  color: var(--bg-color2);
 }
 
 .btn-newsletter {
   background-color: var(--text-color2);
   font-family: 'Poppins';
   border: none;
-  height: 40px;
-  padding: 0 10px 0 10px;
+  padding: 3px 10px 3px 10px;
+}
+.submit-container {
   position: absolute;
-  top: 64px;
-  left: 212px;
+  top: 30px;
+  right: 70px;
 }

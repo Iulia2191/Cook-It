@@ -137,7 +137,7 @@
                                     placeholder="Email-ul tău"
                                     id="email">
                                 <textarea class="contact-message my-3"
-                                    placeholder="Mesajul tău..."
+                                    placeholder="Mesajul tău..." id="message"
                                     rows="4"></textarea>
                                 <button class="btn btn-contact" type="submit">Trimite
                                     mesajul</button>
@@ -184,16 +184,17 @@
                             - Cook
                             It</p>
                     </div>
-                    
                     <div class="col newsletter">
-                        
+                        <div class="newsletter-container">
                         <p>Dacă vrei să afli noutăți despre rețele noastre,
                             abonează-te la newsletter-ul nostru.</p>
-                        <input type="email" placeholder="Email"
+                        <input type="email" placeholder="Email" id="newsletterEmail"
                             class="newsletter-input">
-                        <button class="btn-newsletter">Submit</button>
+                        <button class="btn-newsletter" type="submit">Submit</button>
+                        </div>
+                        <div class="subscribe-error-message"></div>
                    
-                </div>
+                    </div>
                 </div>
                 </div>
                 
@@ -217,7 +218,7 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-        <script src="./js/main.js"></script>
+        <script src="../js/main.js"></script>
         <script src="../js/contact.js"></script>
     </body>
 </html>
