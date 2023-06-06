@@ -98,38 +98,20 @@ nav ul a {
 
 /* Footer */
 footer {
-  height: max-content;
+  margin-top: auto;
+  height: 20vh;
   background-color: var(--bg-color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-footer h2 {
+footer p {
+  text-align: justify;
   color: var(--text-color);
 }
-.contact-name,
-.contact-email,
-.contact-message {
-  z-index: 5;
-  max-width: 100%;
-  width: 400px;
-  background-color: var();
-  border: 1px solid var(--text-color2);
-  color: var(--text-color);
-  background-color: var(--bg-color2);
-  padding: 5px;
+.social-icons {
+  text-align: start;
 }
-
-.contact-text h2 {
-  color: var(--text-color2);
-}
-.contact-text {
-  color: var(--text-color);
-}
-.ct-number,
-.ct-location,
-.ct-email {
-  color: var(--text-color);
-  vertical-align: middle;
-}
-
 .bi-facebook,
 .bi-instagram,
 .bi-twitter {
@@ -137,8 +119,28 @@ footer h2 {
   color: var(--text-color);
 }
 .copyright {
+  text-align: center;
   color: var(--text-color);
 }
-.message-btn {
+.newsletter {
+  z-index: 5;
+}
+.newsletter-input {
+  padding: 6px;
+  position: relative;
+  background-color: var(--bg-color3);
+  border: 1px solid var(--text-color2);
+  height: 40px;
+  color: var(--bg-color3);
+}
+
+.btn-newsletter {
   background-color: var(--text-color2);
+  font-family: 'Poppins';
+  border: none;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  position: absolute;
+  top: 64px;
+  left: 212px;
 }

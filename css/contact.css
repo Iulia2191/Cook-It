@@ -2,121 +2,64 @@
   --background1: #454545;
   --text-color: whitesmoke;
   --text-color2: #f3c376;
+  --bg-color2: #222222;
+  --bg-color3: #edede9;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  width: max-content;
-  height: max-content;
-  background-image: url(https://img.freepik.com/free-photo/yogurt-popsicle_144627-33206.jpg?w=1060&t=st=1685700120~exp=1685700720~hmac=5fd86e2d48ea2c9605ca5b3c3c353c7715ad3faf1ee95ed4e9c0be670f187146);
+  background-image: url(../img/background-contact.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.subscribe-form {
-  max-width: 100%;
-  margin-top: 200px;
-  margin-left: 40px;
-  margin-bottom: 100px;
-  min-height: 50vh;
-  width: 680px;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.3)
-  );
-  color: #333;
-  border-radius: 2rem;
-  padding: 3rem 5rem;
-  display: flex;
-  position: relative;
-}
-
-.title {
-  color: #e6cfda;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.contact-right,
-.contact-left {
-  flex: 1;
-}
-.contact-right {
-  z-index: 3;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+.contact-form-section {
+  margin-bottom: 100px;
+  width: fit-content;
+  height: 400px;
+  margin-top: 200px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.8)
+  );
+  border-radius: 25px;
 }
 
-.promo-container {
-  position: relative;
-  display: flex;
-}
-.subscribe-form input {
-  z-index: 3;
-  border: 1px solid #cbc7c7;
-  padding: 5px;
-}
-.checkbox-label {
-  font-size: 0.8rem;
-}
-#checkbox {
-  z-index: 99;
-}
-#button {
-  z-index: 3;
-  font-family: 'Poppins' sans-serif;
-  font-weight: 500;
-  font-size: 0.9rem;
-  background: #e6cfda;
-  color: white;
-  border-radius: 0.2rem;
-  border-style: none;
-  padding: 0.5rem 2.5rem;
-  cursor: pointer;
-  margin-top: 1rem;
-  align-self: flex-start;
-}
-
-#cupcake {
+.contact-name,
+.contact-email,
+.contact-message {
+  z-index: 5;
   max-width: 100%;
-  position: absolute;
-  top: -150px;
-  left: -20px;
-  transform: scale(0.4) translate(0%, 40%);
-  bottom: 0;
-  transform-origin: bottom;
+  width: 400px;
+  border: 1px solid var(--text-color2);
+  color: var(--bg-color2);
+  background-color: transparent;
+  padding: 10px;
 }
-.submitted {
-  position: absolute;
-  left: 60%;
-  top: 50%;
-  color: #777474;
-  font-size: 1rem;
-  pointer-events: none;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  opacity: 1;
+.btn-contact {
+  z-index: 5;
+  cursor: pointer;
+  background-color: var(--text-color2);
 }
-.username-error-message,
-.phone-error-message,
-.email-error-message {
-  color: rgb(212, 49, 49);
+::placeholder {
+  color: var(--bg-color2);
 }
-@media screen and (max-width: 812px) {
-  .subscribe-form {
-    max-width: 100%;
-    flex-direction: column;
-    margin-left: 0;
-  }
-  #cupcake {
-    transform: scale(0.3);
-    position: absolute;
-    top: -290px;
-    left: 130px;
-  }
+.contact-text h2 {
+  color: var(--text-color2);
+}
+.contact-text {
+  color: var(--background1);
+}
+.ct-number,
+.ct-location,
+.ct-email {
+  color: var(--background1);
+  vertical-align: middle;
 }
