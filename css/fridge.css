@@ -41,9 +41,8 @@ body {
 #recipes-container ul {
   list-style-type: square;
   text-align: justify;
-}
-
-#recipes-container ul {
+  padding-top: 20px ;
+  padding-left: 20px;
   flex: 1 1 50%;
   margin-bottom: 20px;
 }
