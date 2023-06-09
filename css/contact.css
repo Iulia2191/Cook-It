@@ -20,9 +20,11 @@ body {
   flex-direction: column;
 }
 .contact-form-section {
+  max-width: 100%;
   margin-bottom: 100px;
   width: fit-content;
-  height: 400px;
+  max-height: max-content;
+  /* height: 400px; */
   margin-top: 200px;
   background: linear-gradient(
     to right bottom,

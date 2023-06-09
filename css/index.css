@@ -111,14 +111,23 @@ body {
   z-index: 6;
   max-width: 100%;
   width: 350px;
-  height: 480px;
+  height: 500px;
   background-color: transparent;
   text-align: center;
   color: var(--bg-color3);
-  border: none;
+  border: 1px solid var(--bg-color3);
   margin-top: 20px;
-}
+  box-shadow: 0px 0px 0px grey;
+  transition: box-shadow .6s ease-out;
+  -webkit-transition:  box-shadow .6s ease-out;
+  box-shadow: .8px .9px 3px grey;
 
+}
+.card:hover{ 
+  box-shadow: 1px 8px 20px grey;
+  transition: box-shadow .6s ease-in ;
+ -webkit-transition:  box-shadow .6s ease-in;
+}
 .card-img-top {
   width: 100%;
   height: 300px;
@@ -129,15 +138,17 @@ body {
   padding-bottom: 10px;
 }
 .btn-top {
+  z-index: 99;
   padding: 0.3rem 1rem;
-  background: var(--text-color2);
+  background: var(--bg-color2);
   font-family: 'Poppins';
+  border: 1px solid var(--text-color2);
   border-radius: 0.3rem;
-  color: rgb(33, 33, 33);
-  border: none;
+  color:var(--text-color2);
   font-size: 0.9rem;
   cursor: pointer;
 }
+
 
 /* Today's spacial section */
 
@@ -182,7 +193,7 @@ body {
   font-family: 'Poppins';
   border-radius: 0.3rem;
   color: var(--background1);
-  border: none;
+  border: 1px solid var(--text-color2);
   font-size: 0.9rem;
   cursor: pointer;
 }

@@ -8,7 +8,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: max-content;
+  height: 100vh;
+  
 }
 .fridge {
   color: var(--background1);
@@ -21,6 +22,7 @@ body {
   padding: 30px;
   border-radius: 25px;
   margin-bottom: 100px;
+  
 }
 .fridge p {
   color: black;

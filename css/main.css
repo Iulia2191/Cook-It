@@ -12,6 +12,8 @@
 }
 body {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navbar */
@@ -23,6 +25,7 @@ header {
   width: 100%;
   z-index: 2;
   min-height: 212px;
+  
 }
 #logo {
   font-family: 'Great Vibes', cursive;
@@ -41,6 +44,7 @@ header {
 }
 #nav2 {
   height: 70px;
+  
 }
 .first {
   color: var(--text-color) !important;
@@ -52,6 +56,7 @@ header {
   color: var(--text-color2) !important;
 }
 nav ul a {
+  
   color: var(--text-color) !important;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
@@ -73,6 +78,7 @@ nav ul a {
 }
 
 .input-search {
+  
   position: relative;
   outline: none;
   border: none;
@@ -99,7 +105,7 @@ nav ul a {
 /* Footer */
 footer {
   margin-top: auto;
-  height: max-content;
+  min-height: 150px;
   background-color: var(--bg-color2);
   display: flex;
   justify-content: center;
@@ -135,13 +141,15 @@ footer p {
 }
 
 .btn-newsletter {
-  background-color: var(--text-color2);
+  background-color: var(--bg-color2);
+  color: var(--text-color2);
   font-family: 'Poppins';
-  border: none;
+  border: 1px solid var(--text-color2);
   padding: 3px 10px 3px 10px;
+  cursor: pointer;
 }
 .submit-container {
   position: absolute;
-  top: 30px;
+  top: 50px;
   right: 70px;
 }
