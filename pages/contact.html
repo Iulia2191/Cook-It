@@ -95,7 +95,7 @@
         <main>
             <section class="contact-form-section mx-auto">
                 <div class="container">
-                    <div class="row py-3">
+                    <div class="row py-3 contact-form-container">
                         <div class="col-sm-12 col-md-6 col-lg-6 ">
                             <div class="container contact-text">
                                 <h2 class="my-3">Contactează-ne</h2>
@@ -132,19 +132,24 @@
                                     type="text"
                                     placeholder="Numele tău"
                                     id="name">
+                                    <div id="name-error-message"></div>
                                 <input class="contact-email my-3"
                                     type="email"
                                     placeholder="Email-ul tău"
                                     id="email">
+                                    <div id="email-error-message"></div>
                                 <textarea class="contact-message my-3"
                                     placeholder="Mesajul tău..." id="message"
                                     rows="4"></textarea>
+                                    <div id="message-error-message"></div>
                                 <button class="btn btn-contact" type="submit">Trimite
                                     mesajul</button>
                             </form>
-
+                           
                         </div>
+                        
                     </div>
+                    <div class="message-container"><p>Mesajul dumneavoastra a fost inregistrat. Va vom contacta in cel mai scurt timp posibil! 👏</p></div>
                 </div>
 
             </section>
