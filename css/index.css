@@ -7,7 +7,6 @@
 }
 body {
   width: 100%;
-  z-index: 1;
   letter-spacing: 2px;
 }
 /* Hero Section */
@@ -108,7 +107,7 @@ body {
   color: var(--bg-color3);
 }
 .card {
-  z-index: 6;
+  /* z-index: 6; */
   max-width: 100%;
   width: 350px;
   height: 500px;
@@ -122,6 +121,10 @@ body {
   -webkit-transition:  box-shadow .6s ease-out;
   box-shadow: .8px .9px 3px grey;
 
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
 }
 .card:hover{ 
   box-shadow: 1px 8px 20px grey;
@@ -138,7 +141,7 @@ body {
   padding-bottom: 10px;
 }
 .btn-top {
-  z-index: 99;
+  z-index: 3;
   padding: 0.3rem 1rem;
   background: var(--bg-color2);
   font-family: 'Poppins';
