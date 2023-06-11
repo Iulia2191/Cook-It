@@ -152,4 +152,8 @@ footer p {
   position: absolute;
   top: 50px;
   right: 70px;
+ 
+}
+.subscribe-error-message p{
+  margin-bottom: 0 !important;
 }

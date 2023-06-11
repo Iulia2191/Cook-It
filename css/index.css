@@ -16,8 +16,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.hero-section {
   height: 100vh;
 }
 
@@ -47,9 +45,9 @@ body {
   background: var(--text-color2);
   font-family: 'Poppins';
   border-radius: 0.3rem;
-  color: rgb(33, 33, 33);
+  color: var(--bg-color3);
   border: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 .cook {
@@ -107,7 +105,7 @@ body {
   color: var(--bg-color3);
 }
 .card {
-  /* z-index: 6; */
+ 
   max-width: 100%;
   width: 350px;
   height: 500px;
@@ -117,8 +115,8 @@ body {
   border: 1px solid var(--bg-color3);
   margin-top: 20px;
   box-shadow: 0px 0px 0px grey;
-  transition: box-shadow .6s ease-out;
-  -webkit-transition:  box-shadow .6s ease-out;
+  transition: box-shadow .3s ease-out;
+  -webkit-transition:  box-shadow .3s ease-out;
   box-shadow: .8px .9px 3px grey;
 
 }
@@ -128,8 +126,11 @@ body {
 }
 .card:hover{ 
   box-shadow: 1px 8px 20px grey;
-  transition: box-shadow .6s ease-in ;
- -webkit-transition:  box-shadow .6s ease-in;
+  transition: box-shadow .3s ease-in ;
+ -webkit-transition:  box-shadow .3s ease-in;
+}
+.card a:hover{
+  color: var(--text-color2);
 }
 .card-img-top {
   width: 100%;
@@ -147,7 +148,7 @@ body {
   font-family: 'Poppins';
   border: 1px solid var(--text-color2);
   border-radius: 0.3rem;
-  color:var(--text-color2);
+  color:var(--bg-color3);
   font-size: 0.9rem;
   cursor: pointer;
 }
@@ -190,12 +191,12 @@ body {
   color: var(--background1);
 }
 .special-card button {
-  margin: 1rem;
+  
   padding: 0.3rem 1rem;
   background: var(--text-color2);
   font-family: 'Poppins';
   border-radius: 0.3rem;
-  color: var(--background1);
+  color: var(--bg-color3);
   border: 1px solid var(--text-color2);
   font-size: 0.9rem;
   cursor: pointer;
