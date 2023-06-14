@@ -25,11 +25,12 @@ header {
   width: 100%;
   z-index: 2;
   min-height: 212px;
-  
+  font-weight: 600;
 }
 #logo {
   font-family: 'Great Vibes', cursive;
   font-size: 45px;
+  font-weight: 400;
   color: whitesmoke;
   text-transform: none;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
