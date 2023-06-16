@@ -119,6 +119,7 @@ footer p {
 }
 .social-icons {
   text-align: start;
+  z-index: 4;
 }
 .bi-facebook,
 .bi-instagram,
