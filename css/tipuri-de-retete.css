@@ -12,12 +12,13 @@ body{
 
 /* Hero section */
 
+
 .hero-section{
   background-image: url(/img/tipuri-de-retete.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 70vh;
 }
 h1{
     padding-top: 200px;

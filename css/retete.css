@@ -1,0 +1,31 @@
+:root {
+    --background1: #454545;
+    --text-color: whitesmoke;
+    --text-color2: #f3c376;
+    --bg-color2: #222222;
+    --bg-color3: #edede9;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .hero-section{
+   
+    height: 70vh;
+    background-image: url(/img/background-index.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  }
+
+  h1{
+    padding-top: 200px;
+    color: var(--bg-color3);
+  }
+  .img-retete{
+    width: 500px;
+    height: 500px;
+  }
