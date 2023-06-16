@@ -91,6 +91,7 @@ body {
 .top-h1 {
   color: var(--text-color2);
   font-family: 'Great Vibes', cursive;
+  font-size: 50px;
 }
 .top-h4 {
   color: var(--bg-color3);
