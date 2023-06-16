@@ -80,7 +80,7 @@ nav ul a {
 
 .input-search {
   
-  position: relative;
+  position: absolute;
   outline: none;
   border: none;
   height: 100%;
