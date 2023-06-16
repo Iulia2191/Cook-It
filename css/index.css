@@ -181,6 +181,7 @@ body {
   font-family: 'Great Vibes', cursive;
   color: var(--text-color2);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+  font-size: 50px;
 }
 .card-title,
 .card-subtitle,
@@ -192,7 +193,7 @@ body {
   background: var(--text-color2);
   font-family: 'Poppins';
   border-radius: 5px;
-  color: var(--bg-color3);
+  color: var(--background1);
   border: 1px solid var(--text-color2);
   font-size: 0.9rem;
   cursor: pointer;
