@@ -79,10 +79,8 @@ submitButton.addEventListener('click', function(event) {
   }
 });
 
-
-
 const characterCount = document.getElementById('characterCount');
-const totalChars = 20; // Numărul total fix de caractere
+const totalChars = 20; 
 
 message.addEventListener('input', function() {
   const text = message.value;
