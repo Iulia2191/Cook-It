@@ -74,3 +74,9 @@ body {
   top: 350px;
   left: 380px;
 }
+
+#characterCount{
+  position: absolute;
+  right: 45px;
+  bottom: 50px;
+}

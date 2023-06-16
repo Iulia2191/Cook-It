@@ -30,8 +30,8 @@ function validateEmail() {
 }
 
 function validateMessage() {
-  if (message.value.length <= 50) {
-    messageErrorMessage.innerHTML = "Va rugam sa introduceti cel putin 50 de caractere.";
+  if (message.value.length <= 20) {
+    messageErrorMessage.innerHTML = "Va rugam sa introduceti cel putin 20 de caractere.";
     return false;
   } else {
     messageErrorMessage.innerHTML = "";
@@ -64,8 +64,8 @@ email.addEventListener("change", function(event) {
   
 message.addEventListener("change", function(event) {
       const value = event.target.value;
-      if (message.value.length <= 50) {
-          messageErrorMessage.innerHTML = "Va rugam sa introduceti cel putin 50 de caractere.";
+      if (message.value.length <= 20) {
+          messageErrorMessage.innerHTML = "Va rugam sa introduceti cel putin 20 de caractere.";
         }else{
           messageErrorMessage.innerHTML= ''
         }
@@ -77,4 +77,15 @@ submitButton.addEventListener('click', function(event) {
     contactContainer.style.opacity = '0';
     messageContainer.style.opacity = '1';
   }
+});
+
+
+
+const characterCount = document.getElementById('characterCount');
+const totalChars = 20; // Numărul total fix de caractere
+
+message.addEventListener('input', function() {
+  const text = message.value;
+  const count = text.length;
+  characterCount.textContent =  + count + '/' + totalChars;
 });
