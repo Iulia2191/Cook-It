@@ -3,13 +3,14 @@
   --text-color: whitesmoke;
   --text-color2: #f3c376;
 }
+
 body {
   background-image: url(../img/fridge-background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 106vh;
-  
+  max-height: max-content;
 }
 .fridge {
   color: var(--background1);
@@ -22,7 +23,7 @@ body {
   padding: 30px;
   border-radius: 25px;
   margin-bottom: 20px;
-  
+  font-size: small;
 }
 
 .ingredients {
@@ -40,8 +41,17 @@ body {
 #recipes-container ul {
   list-style-type: square;
   text-align: justify;
-  padding-top: 20px ;
+  padding-top: 20px;
   padding-left: 20px;
   flex: 1 1 50%;
   margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+  .fridge {
+    margin-top: 150px;
+    height: max-content;
+  }
 }

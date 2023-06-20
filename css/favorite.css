@@ -4,21 +4,19 @@
   --text-color2: #f3c376;
   --bg-color2: #222222;
   --bg-color3: #edede9;
+  --bg-color4: #2c2c2c;
 }
 body {
   letter-spacing: 2px;
-  max-height: fit-content;
+  max-height: max-content;
 }
 
-/* Hero section */
-
 .hero-section {
-  background-image: url(/img/tipuri-de-retete.jpeg);
+  background-image: url(/img/favorite-background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
-  max-height: max-content;
+  height: 80vh;
 }
 h1 {
   padding-top: 200px;
@@ -40,38 +38,56 @@ h1 {
     transform: scale(1, 1);
   }
 }
-
-/* Cards section */
-
-.cards-section {
-  background-color: #2c2c2c;
+.favorite-retete {
   max-height: max-content;
+  background-color: var(--bg-color4);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#favorite-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .card {
-  max-width: 100%;
-  max-height: max-content;
-  height: 510px;
-  margin: 10px;
-  border: 1px solid var(--bg-color3);
-  background-color: transparent;
-  color: var(--bg-color3);
-}
-.card:hover {
-  box-shadow: 1px 8px 20px grey;
-  transition: box-shadow 0.3s ease-in;
-  -webkit-transition: box-shadow 0.3s ease-in;
-}
-.card a:hover {
-  color: var(--text-color2);
-}
-.card-body {
+  width: 18rem;
+  height: 480px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 1px solid var(--bg-color3);
 }
+
+.card-img-top {
+  max-width: 100%;
+  width: 285px;
+  height: 285px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
 .btn {
   position: absolute;
-  bottom: 80px;
+  bottom: 50px;
   left: 15px;
   padding: 5px 80px 5px 80px;
   z-index: 4;
@@ -80,29 +96,18 @@ h1 {
   color: var(--bg-color3);
   background-color: transparent;
 }
-.card-img-top {
-  max-width: 100%;
-  width: 285px;
-  height: 285px;
+.btn:hover {
+  color: var(--text-color2);
 }
-
 #favorite-btn {
-  text-align: center;
-  padding: 5px 45px 5px 45px;
+  display: none;
+}
+.remove-btn {
   z-index: 4;
   cursor: pointer;
-  border: 1px solid #f3c376;
-  color: var(--bg-color2);
-  background-color: var(--text-color2);
-  border-radius: 5px;
-  position: absolute;
-  bottom: 20px;
-  left: 15px;
-  text-decoration: none;
-}
-@media (max-width: 768px) {
-  .footer {
-    margin: 0;
-    height: 500px;
-  }
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color: #f3c376;
+  border: none;
 }

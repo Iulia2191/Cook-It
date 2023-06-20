@@ -1,50 +1,75 @@
 :root {
-    --background1: #454545;
-    --text-color: whitesmoke;
-    --text-color2: #f3c376;
-    --bg-color2: #222222;
-    --bg-color3: #edede9;
-    --bg-color4: #2c2c2c;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-body{
+  --background1: #454545;
+  --text-color: whitesmoke;
+  --text-color2: #f3c376;
+  --bg-color2: #222222;
+  --bg-color3: #edede9;
+  --bg-color4: #2c2c2c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   letter-spacing: 1.5px;
 }
-  .hero-section{
-   
+.hero-section {
   height: 70vh;
   background-image: url(/img/background-index.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  }
+}
 
-  h1{
-    padding-top: 200px;
-    color: var(--text-color);
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-  }
-  h3{
-    color: var(--text-color2);
-  }
-  .img-retete{
-    width: 500px;
-    height: 400px;
-    object-fit: cover;
-  }
+h1 {
+  padding-top: 200px;
+  color: var(--text-color);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+h3 {
+  color: var(--text-color2);
+}
+.img-retete {
+  max-width: 100%;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
 
-  .reteta-ingrediente{
-    background-color: var(--bg-color4);
-    color: var(--bg-color3);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: larger;
+.reteta-ingrediente {
+  background-color: var(--bg-color4);
+  color: var(--bg-color3);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: larger;
+}
+.video {
+  max-width: 100% !important;
+  z-index: 3;
+}
+.favorite-btn {
+  width: 30%;
+  max-width: 100%;
+  z-index: 3;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: var(--text-color2);
+  padding: 7px 10px 7px 10px;
+  border: none;
+}
+@media (max-width: 768px) {
+  .row {
+    margin: 10px !important;
   }
-  .video{
-    z-index: 3;
+  .reteta-ingrediente {
+    margin-left: 0 !important;
   }
+  .video {
+    margin-left: 0 !important;
+  }
+  .favorite-btn {
+    width: 100%;
+  }
+}

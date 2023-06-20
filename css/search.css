@@ -12,79 +12,77 @@
   box-sizing: border-box;
 }
 
-
-
 .search-section {
   background-image: url(/img/kitchen.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 70vh;
-  color:var(--bg-color3);
+  color: var(--bg-color3);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-h3{
-    margin-top: 150px;
+h3 {
+  margin-top: 150px;
 }
 #search {
-    
+  border-radius: 5px;
   z-index: 4;
   width: 50%;
   padding: 5px;
 }
 #search-button {
   cursor: pointer;
+  border: none;
   z-index: 4;
   width: 10%;
   padding: 10px;
   margin-top: 20px;
   background-color: var(--text-color2);
   color: var(--background1);
+  font-size: 1rem;
 }
 
- /* Cards section */
+/* Cards section */
 
- .cards-section{
-    background-color: #2c2c2c;
-  }
+.cards-section {
+  background-color: var(--bg-color4);
+}
 
-  .card{
-    height: 450px;
-    margin: 10px;
-    border: 1px solid var(--bg-color3);
-    background-color: transparent;
-    color: var(--bg-color3);
-  
-  }
-  .card:hover{ 
-    box-shadow: 1px 8px 20px grey;
-    transition: box-shadow .3s ease-in ;
-   -webkit-transition:  box-shadow .3s ease-in;
-  }
-  .card a:hover{
-    color: var(--text-color2);
-  }
-  .card-body{
-    display: flex;
-    flex-direction: column;
-  }
-  .btn{
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
-    padding: 5px 80px 5px 80px;
-    z-index: 4;
-    cursor: pointer;
-    border: 1px solid #f3c376;
-    color: var(--bg-color3);
-    background-color: transparent;
-    
-  }
-  .card-img-top{
-    max-width: 100%;
-    width: 285px;
-    height: 285px;
-  }
+.card {
+  height: 450px;
+  margin: 10px;
+  border: 1px solid var(--bg-color3);
+  background-color: transparent;
+  color: var(--bg-color3);
+}
+.card:hover {
+  box-shadow: 1px 8px 20px grey;
+  transition: box-shadow 0.3s ease-in;
+  -webkit-transition: box-shadow 0.3s ease-in;
+}
+.card a:hover {
+  color: var(--text-color2);
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  padding: 5px 80px 5px 80px;
+  z-index: 4;
+  cursor: pointer;
+  border: 1px solid #f3c376;
+  color: var(--bg-color3);
+  background-color: transparent;
+}
+.card-img-top {
+  max-width: 100%;
+  width: 285px;
+  height: 285px;
+}
