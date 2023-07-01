@@ -1,7 +1,7 @@
 :root {
   --background1: #454545;
   --text-color: whitesmoke;
-  --text-color2: #AAB849;
+  --text-color2: #f3c376;
   --bg-color2: #222222;
   --bg-color3: #edede9;
 }
@@ -17,13 +17,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  
 }
 
 .cta-text {
- display: flex;
- flex-direction: column;
- align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 300px;
   color: var(--text-color);
   font-size: 2rem;
@@ -74,11 +73,9 @@ body {
   .cta-text {
     padding-top: 300px;
   }
-.cta-btn{
-  width: 50%;
-}
-
- 
+  .cta-btn {
+    width: 50%;
+  }
 }
 /* Top-three Section */
 
@@ -97,7 +94,6 @@ body {
   color: var(--bg-color3);
 }
 .card {
- 
   max-width: 100%;
   width: 350px;
   height: 500px;
@@ -107,21 +103,20 @@ body {
   border: 1px solid var(--bg-color3);
   margin-top: 20px;
   box-shadow: 0px 0px 0px grey;
-  transition: box-shadow .3s ease-out;
-  -webkit-transition:  box-shadow .3s ease-out;
-  box-shadow: .8px .9px 3px grey;
-
+  transition: box-shadow 0.3s ease-out;
+  -webkit-transition: box-shadow 0.3s ease-out;
+  box-shadow: 0.8px 0.9px 3px grey;
 }
-.card-body{
+.card-body {
   display: flex;
   flex-direction: column;
 }
-.card:hover{ 
+.card:hover {
   box-shadow: 1px 8px 20px grey;
-  transition: box-shadow .3s ease-in ;
- -webkit-transition:  box-shadow .3s ease-in;
+  transition: box-shadow 0.3s ease-in;
+  -webkit-transition: box-shadow 0.3s ease-in;
 }
-.card a:hover{
+.card a:hover {
   color: var(--text-color2);
 }
 .card-img-top {
@@ -140,11 +135,10 @@ body {
   font-family: 'Poppins';
   border: 1px solid var(--text-color2);
   border-radius: 0.3rem;
-  color:var(--bg-color3);
+  color: var(--bg-color3);
   font-size: 0.9rem;
   cursor: pointer;
 }
-
 
 /* Today's spacial section */
 
@@ -155,14 +149,13 @@ body {
   background-repeat: no-repeat;
   height: 80vh;
 }
-.special-container{
+.special-container {
   display: flex;
   flex-direction: column;
-  align-items: end; 
+  align-items: end;
   padding-top: 100px;
   padding-right: 100px;
- 
-} 
+}
 .special-card {
   width: 400px;
   max-width: 100%;
@@ -171,8 +164,8 @@ body {
   z-index: 5;
   background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.6)
+    rgba(255, 255, 255, 0.7),
+    rgba(225, 225, 225, 0.6)
   );
 
   border-radius: 25px;
@@ -200,9 +193,8 @@ body {
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  .special-container{ 
+  .special-container {
     padding-top: 50px;
     padding-right: 50px;
-   
-  } 
+  }
 }

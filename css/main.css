@@ -45,6 +45,11 @@ header {
 }
 #nav2 {
   height: 70px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(163, 158, 158, 0.6),
+    rgba(228, 222, 222, 0.3)
+  );
 }
 .first {
   color: var(--text-color) !important;
@@ -58,6 +63,7 @@ header {
 nav ul a {
   color: var(--text-color) !important;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
 .dropdown-item {
   color: var(--background1) !important;
