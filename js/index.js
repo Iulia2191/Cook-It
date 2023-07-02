@@ -5,7 +5,7 @@ function exploreRecipes () {
     '../pages/retete/cosulete-crema.html',
     '../pages/retete/cupcake-zmeura.html',
     '../pages/retete/ardei-umpluti.html',
-    '../pages/retete/briose-ciococlata.html',
+    '../pages/retete/briose-ciocolata.html',
     '../pages/retete/caramele-sarate.html',
     '../pages/retete/chiftele-dovlecei.html',
     '../pages/retete/ciocanele-pui.html',
