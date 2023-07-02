@@ -44,6 +44,11 @@ h3 {
   color: var(--background1);
   font-size: 1rem;
 }
+@media (max-width: 768px) {
+  #search-button {
+    width: 50%;
+  }
+}
 
 /* Cards section */
 
