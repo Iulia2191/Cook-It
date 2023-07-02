@@ -31,7 +31,7 @@ function exploreRecipes () {
     '../pages/retete/supa-minestrone.html',
     '../pages/retete/supa-rosii.html',
     '../pages/retete/tarta-lamaie.html',
-    '../pages/retete/waffe-vanilie.html'
+    '../pages/retete/waffle-vanilie.html'
   ]
 
   var randomIndex = Math.floor(Math.random() * recipes.length)
