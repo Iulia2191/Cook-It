@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const card = document.createElement('div')
       card.className = 'col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3'
       card.innerHTML = `
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem">
           ${cardHTML}
           <button class="remove-btn" data-index="${index}">Sterge</button>
         </div>
