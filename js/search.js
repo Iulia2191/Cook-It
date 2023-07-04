@@ -27,7 +27,7 @@ search.addEventListener('keyup', function (e) {
   })
 })
 searchButton.addEventListener('click', function (e) {
-  const currentValue = e.target.value.toLowerCase()
+  const currentValue = search.value.toLowerCase()
 
   cards.forEach(function (card) {
     const cardTitle = card.querySelector('h5')
