@@ -1,11 +1,13 @@
 const favoriteButtons = document.querySelectorAll('#favorite-btn')
 
+// Adauga la favorite
 favoriteButtons.forEach(button => {
   button.addEventListener('click', e => {
     e.preventDefault()
 
     const currentCard = e.target.closest('.card')
     const clonedCard = currentCard.cloneNode(true)
+    const cardHTML = clonedCard.innerHTML
 
     const favoritePage = window.open('./favorite.html', '_blank')
     favoritePage.onload = () => {
@@ -15,14 +17,8 @@ favoriteButtons.forEach(button => {
 
       const favoriteCards =
         JSON.parse(localStorage.getItem('favoriteCards')) || []
-      favoriteCards.push(clonedCard.innerHTML)
+      favoriteCards.push(cardHTML)
       localStorage.setItem('favoriteCards', JSON.stringify(favoriteCards))
     }
   })
-})
-
-const cards = document.querySelectorAll('.card')
-cards.forEach(card => {
-  let randomAniDelay = Math.floor(Math.random() * 500)
-  card.style.animation = `fadeIn 1s .${randomAniDelay}s ease forwards`
 })

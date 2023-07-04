@@ -104,7 +104,11 @@
           </ul>
         </div>
         <div class="input-box">
-          <form action="/search.html" id="search-form">
+          <form
+            action="/search.html"
+            id="search-form"
+            onsubmit="submitSearchForm (event)"
+          >
             <input
               type="text"
               placeholder="Cauta reteta..."

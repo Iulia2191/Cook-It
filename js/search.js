@@ -1,15 +1,40 @@
 const search = document.getElementById('search')
 const cardsContainer = document.querySelector('.retete-cards .row')
 const cards = document.querySelectorAll('.card')
+const searchButton = document.querySelector('#search-button')
+const favoriteButtons = document.querySelectorAll('#favorite-btn')
 
-search.addEventListener('keyup', e => {
-  let currentValue = e.target.value.toLowerCase()
+// Search input
+const urlParams = new URLSearchParams(window.location.search)
+const searchQuery = urlParams.get('query')
+if (searchQuery) {
+  search.value = searchQuery
+}
 
-  cards.forEach(card => {
-    let cardTitle = card.querySelector('h5')
-    if (cardTitle.textContent.toLowerCase().includes(currentValue)) {
+search.addEventListener('keyup', function (e) {
+  const currentValue = e.target.value.toLowerCase()
+
+  cards.forEach(function (card) {
+    const cardTitle = card.querySelector('h5')
+    const titleText = cardTitle.textContent.toLowerCase()
+
+    if (titleText.includes(currentValue)) {
       card.style.display = 'block'
+      cardsContainer.insertBefore(card, cardsContainer.firstChild)
+    } else {
+      card.style.display = 'none'
+    }
+  })
+})
+searchButton.addEventListener('click', function (e) {
+  const currentValue = e.target.value.toLowerCase()
 
+  cards.forEach(function (card) {
+    const cardTitle = card.querySelector('h5')
+    const titleText = cardTitle.textContent.toLowerCase()
+
+    if (titleText.includes(currentValue)) {
+      card.style.display = 'block'
       cardsContainer.insertBefore(card, cardsContainer.firstChild)
     } else {
       card.style.display = 'none'
@@ -17,8 +42,7 @@ search.addEventListener('keyup', e => {
   })
 })
 
-const favoriteButtons = document.querySelectorAll('#favorite-btn')
-
+// Adauga la favorite
 favoriteButtons.forEach(button => {
   button.addEventListener('click', e => {
     e.preventDefault()
@@ -38,9 +62,4 @@ favoriteButtons.forEach(button => {
       localStorage.setItem('favoriteCards', JSON.stringify(favoriteCards))
     }
   })
-})
-
-cards.forEach(card => {
-  let randomAniDelay = Math.floor(Math.random() * 500)
-  card.style.animation = `fadeIn 1s .${randomAniDelay}s ease forwards`
 })

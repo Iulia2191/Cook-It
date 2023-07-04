@@ -1,5 +1,5 @@
 function exploreRecipes () {
-  var recipes = [
+  const recipes = [
     '../pages/retete/ciorba-burta.html',
     '../pages/retete/ciorba-grec.html',
     '../pages/retete/cosulete-crema.html',
@@ -34,7 +34,7 @@ function exploreRecipes () {
     '../pages/retete/waffle-vanilie.html'
   ]
 
-  var randomIndex = Math.floor(Math.random() * recipes.length)
-  var randomRecipe = recipes[randomIndex]
+  const randomIndex = Math.floor(Math.random() * recipes.length)
+  const randomRecipe = recipes[randomIndex]
   window.location.href = randomRecipe
 }

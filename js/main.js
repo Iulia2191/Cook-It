@@ -3,7 +3,10 @@ const subscribeInput = document.querySelector('#newsletterEmail')
 const errorContainer = document.querySelector('.subscribe-error-message')
 const newsletterContainer = document.querySelector('.newsletter-container')
 const submitContainer = document.querySelector('.submit-container')
+const searchForm = document.getElementById('search-form')
+const searchInput = document.getElementById('search-input')
 
+// Email validation
 function ValidateEmail () {
   var validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -36,11 +39,10 @@ function handleEnter (event) {
 subscribeButton.addEventListener('click', handleClick)
 subscribeInput.addEventListener('keydown', handleEnter)
 
-var searchForm = document.getElementById('search-form')
-var searchInput = document.getElementById('search-input')
-
-searchForm.addEventListener('submit', function (event) {
+// Search
+function submitSearchForm (event) {
   event.preventDefault()
-  var searchTerm = searchInput.value
-  window.location.href = '/search.html?term=' + searchTerm
-})
+  const searchInputValue = searchInput.value
+  window.location.href =
+    '/search.html?query=' + encodeURIComponent(searchInputValue)
+}

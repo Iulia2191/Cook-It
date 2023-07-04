@@ -67,7 +67,6 @@ h3 {
   border: 1px solid var(--bg-color3);
   background-color: transparent;
   color: var(--bg-color3);
-  opacity: 0;
 }
 .card:hover {
   box-shadow: 1px 8px 20px grey;
@@ -120,16 +119,5 @@ h3 {
   .footer {
     margin: 0;
     height: 500px;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translate(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0px);
   }
 }
