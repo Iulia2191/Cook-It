@@ -46,3 +46,15 @@ function submitSearchForm (event) {
   window.location.href =
     '/search.html?query=' + encodeURIComponent(searchInputValue)
 }
+
+// Animatie Logo
+
+window.addEventListener('scroll', function () {
+  var logo = document.getElementById('logo')
+
+  if (window.scrollY > 0) {
+    logo.classList.remove('large')
+  } else {
+    logo.classList.add('large')
+  }
+})

@@ -29,12 +29,15 @@ header {
 }
 #logo {
   font-family: 'Great Vibes', cursive;
-  font-size: 45px;
   font-weight: 400;
   color: whitesmoke;
   text-transform: none;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out 0s;
+  font-size: 40px;
+  transition: font-size 0.3s;
+}
+#logo.large {
+  font-size: 55px;
 }
 .navbar-toggler {
   color: var(--text-color) !important;
@@ -42,7 +45,7 @@ header {
 }
 
 #nav1 {
-  height: 70px;
+  height: 80px;
 }
 #nav2 {
   height: 70px;
@@ -72,6 +75,20 @@ nav ul a {
 .dropdown-item:hover {
   color: #f3c376 !important;
 }
+
+.dropdown-menu .dropdown-item[href='/pages/supe.html'],
+.dropdown-menu .dropdown-item[href='/pages/desert.html'],
+.dropdown-menu .dropdown-item[href='/pages/fel-principal.html'],
+.dropdown-menu .dropdown-item[href='/pages/rapide.html'] {
+  background-color: whitesmoke;
+}
+.dropdown-menu .dropdown-item[href='./pages/supe.html'],
+.dropdown-menu .dropdown-item[href='./pages/desert.html'],
+.dropdown-menu .dropdown-item[href='./pages/fel-principal.html'],
+.dropdown-menu .dropdown-item[href='./pages/rapide.html'] {
+  background-color: whitesmoke;
+}
+
 /* Search input nav */
 .input-box {
   position: relative;
