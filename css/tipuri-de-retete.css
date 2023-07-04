@@ -52,10 +52,12 @@ h1 {
   max-width: 100%;
   max-height: max-content;
   height: 510px;
+  width: 320px !important;
   margin: 10px;
   border: 1px solid var(--bg-color3);
   background-color: transparent;
   color: var(--bg-color3);
+  opacity: 0;
 }
 .card:hover {
   box-shadow: 1px 8px 20px grey;
@@ -73,6 +75,7 @@ h1 {
   position: absolute;
   bottom: 80px;
   left: 15px;
+  width: 90%;
   padding: 5px 80px 5px 80px;
   z-index: 4;
   cursor: pointer;
@@ -82,11 +85,12 @@ h1 {
 }
 .card-img-top {
   max-width: 100%;
-  width: 285px;
+  width: 320px;
   height: 285px;
 }
 
 #favorite-btn {
+  width: 90%;
   text-align: center;
   padding: 5px 45px 5px 45px;
   z-index: 4;
@@ -104,5 +108,16 @@ h1 {
   .footer {
     margin: 0;
     height: 500px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
   }
 }

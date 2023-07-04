@@ -20,3 +20,9 @@ favoriteButtons.forEach(button => {
     }
   })
 })
+
+const cards = document.querySelectorAll('.card')
+cards.forEach(card => {
+  let randomAniDelay = Math.floor(Math.random() * 500)
+  card.style.animation = `fadeIn 1s .${randomAniDelay}s ease forwards`
+})
