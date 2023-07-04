@@ -6,7 +6,6 @@ const favoriteButtons = document.querySelectorAll('#favorite-btn')
 
 // Search input
 
-// Funcție pentru căutare
 function performSearch () {
   const currentValue = search.value.toLowerCase()
 
@@ -23,7 +22,6 @@ function performSearch () {
   })
 }
 
-// Căutare inițială după parametru
 const urlParams = new URLSearchParams(window.location.search)
 const searchQuery = urlParams.get('query')
 if (searchQuery) {
@@ -31,25 +29,20 @@ if (searchQuery) {
   performSearch()
 }
 
-// Căutare la apăsarea butonului
 searchButton.addEventListener('click', function (e) {
   performSearch()
 })
-// Cautare la enter
 search.addEventListener('keyup', function (e) {
   performSearch()
 })
 
-// Eveniment pentru ștergerea conținutului din câmpul de căutare
 search.addEventListener('input', function (e) {
   if (search.value === '') {
-    // Afiseaza toate cardurile
     cards.forEach(function (card) {
       card.style.display = 'block'
       cardsContainer.appendChild(card)
     })
 
-    // Elimina parametrul de cautare din URL
     const url = new URL(window.location.href)
     url.searchParams.delete('query')
     window.history.replaceState({}, '', url)
