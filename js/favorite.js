@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (favoriteCards && favoriteCards.length > 0) {
     favoriteCards.forEach((cardHTML, index) => {
+      console.log('Hello')
       const cardWrapper = document.createElement('div')
       cardWrapper.className = 'card-border'
 
@@ -15,10 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
           <button class="remove-btn" data-index="${index}">Sterge</button>
         </div>
       `
-
       cardWrapper.appendChild(card)
       favoriteContainer.appendChild(cardWrapper)
     })
+
+    // Butoanele de stergere
 
     const removeButtons = document.querySelectorAll('.remove-btn')
     removeButtons.forEach(button => {
