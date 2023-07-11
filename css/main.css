@@ -123,6 +123,16 @@ nav ul a {
   width: 60px;
   border-radius: 6px;
 }
+@media (max-width: 768px) {
+  .input-box {
+    width: 60%;
+  }
+}
+@media (max-width: 280px) {
+  .input-box {
+    width: 40%;
+  }
+}
 
 /* Footer */
 footer {
