@@ -58,3 +58,37 @@ window.addEventListener('scroll', function () {
     logo.classList.add('large')
   }
 })
+
+// Rating Retete
+
+document.addEventListener('DOMContentLoaded', () => {
+  const ratingContainers = document.querySelectorAll('.rating')
+
+  ratingContainers.forEach(ratingContainer => {
+    const stars = ratingContainer.querySelectorAll('.fa-star')
+    const recipeId = ratingContainer.dataset.recipeId
+
+    const savedRating = localStorage.getItem(`rating_${recipeId}`)
+    if (savedRating) {
+      const rating = parseInt(savedRating)
+      if (!isNaN(rating) && rating >= 1 && rating <= stars.length) {
+        for (let i = 0; i < rating; i++) {
+          stars[i].classList.add('active')
+        }
+      }
+    }
+
+    stars.forEach((star, index1) => {
+      star.addEventListener('click', () => {
+        stars.forEach((star, index2) => {
+          index1 >= index2
+            ? star.classList.add('active')
+            : star.classList.remove('active')
+        })
+
+        const rating = index1 + 1
+        localStorage.setItem(`rating_${recipeId}`, rating.toString())
+      })
+    })
+  })
+})
