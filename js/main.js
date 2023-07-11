@@ -7,7 +7,7 @@ const searchForm = document.getElementById('search-form')
 const searchInput = document.getElementById('search-input')
 
 // Email validation
-function ValidateEmail () {
+function validateEmail () {
   var validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
   if (subscribeInput.value.match(validRegex)) {
@@ -26,13 +26,13 @@ function ValidateEmail () {
 
 function handleClick (event) {
   event.preventDefault()
-  ValidateEmail()
+  validateEmail()
 }
 
 function handleEnter (event) {
   if (event.key === 'Enter') {
     event.preventDefault()
-    ValidateEmail()
+    validateEmail()
   }
 }
 
