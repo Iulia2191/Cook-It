@@ -21,7 +21,7 @@ body {
   max-height: max-content;
 }
 h1 {
-  padding-top: 230px;
+  padding-top: 20%;
   color: var(--bg-color3);
   text-transform: uppercase;
   text-align: center;
@@ -50,7 +50,7 @@ h1 {
 
 .card {
   max-width: 100%;
-  max-height: max-content;
+  min-height: max-content;
   height: 510px;
   width: 320px !important;
   margin: 10px;
@@ -107,5 +107,8 @@ h1 {
   .footer {
     margin: 0;
     height: 500px;
+  }
+  h1 {
+    padding-top: 250px;
   }
 }

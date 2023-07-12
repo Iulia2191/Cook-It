@@ -121,3 +121,8 @@ h3 {
     height: 500px;
   }
 }
+@media screen and (orientation: landscape) {
+  .search-section {
+    height: 80vh;
+  }
+}

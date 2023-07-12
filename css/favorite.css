@@ -19,7 +19,7 @@ body {
   height: 80vh;
 }
 h1 {
-  padding-top: 280px;
+  padding-top: 20%;
   color: var(--bg-color3);
   text-transform: uppercase;
   text-align: center;
@@ -38,6 +38,7 @@ h1 {
     transform: scale(1, 1);
   }
 }
+
 .favorite-retete {
   max-height: max-content;
   background-color: var(--bg-color4);
@@ -107,4 +108,9 @@ h1 {
   width: 100%;
   background-color: #f3c376;
   border: none;
+}
+@media (max-width: 789px) {
+  h1 {
+    padding-top: 250px;
+  }
 }

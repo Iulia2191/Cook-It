@@ -24,10 +24,11 @@ body {
 }
 
 h1 {
-  padding-top: 250px;
+  padding-top: 20%;
   color: var(--text-color);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
+
 h3 {
   color: var(--text-color2);
 }
@@ -44,6 +45,8 @@ h3 {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: larger;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 .video {
   max-width: 100% !important;
@@ -69,8 +72,8 @@ h3 {
   .video {
     margin-left: 0 !important;
   }
-  .favorite-btn {
-    width: 100%;
+  h1 {
+    padding-top: 250px;
   }
 }
 /* Rating */
