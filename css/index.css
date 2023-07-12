@@ -71,15 +71,24 @@ body {
 
 @media (max-width: 768px) {
   .cta-text {
-    padding-top: 250px;
+    padding-top: 180px;
   }
   .cta-btn {
     width: 50%;
   }
   .hero-section {
-    height: 70vh;
+    height: 80vh;
   }
 }
+@media screen and (orientation: landscape) {
+  .hero-section {
+    height: 100vh;
+  }
+  .hero-section h1 {
+    padding-top: 20%;
+  }
+}
+
 /* Top-three Section */
 
 .top-three {
