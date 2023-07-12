@@ -123,27 +123,18 @@ nav ul a {
   width: 60px;
   border-radius: 6px;
 }
-@media (max-width: 768px) {
-  .input-box {
-    width: 40%;
-  }
-}
-@media (max-width: 280px) {
-  .input-box {
-    width: 40%;
-  }
-}
 
 /* Footer */
 footer {
   margin-top: auto;
-  min-height: 200px;
+  min-height: 150px;
   height: fit-content;
   background-color: var(--bg-color2);
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 3%;
+  margin-top: 0;
 }
 footer p {
   text-align: justify;
