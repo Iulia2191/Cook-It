@@ -104,11 +104,7 @@ h1 {
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  .footer {
-    margin: 0;
-    height: 500px;
-  }
   h1 {
-    padding-top: 150px;
+    padding-top: 200px;
   }
 }

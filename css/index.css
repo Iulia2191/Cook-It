@@ -69,38 +69,24 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .cta-text {
-<<<<<<< HEAD
-    padding-top: 180px;
-=======
-    padding-top: 280px;
->>>>>>> 7f6b8c65bb2e1c334f287d6372f7f1af8201ee25
+    padding-top: 200px;
   }
   .cta-btn {
     width: 50%;
   }
+  .cta-text h2 {
+    font-size: 1.5rem;
+  }
+  .cta-text h4 {
+    font-size: 1rem;
+  }
+  .cook {
+    font-size: 2.2rem;
+  }
   .hero-section {
     height: 80vh;
-<<<<<<< HEAD
-=======
-  }
-}
-@media screen and (orientation: landscape) {
-  .cta-text {
-    padding-top: 20%;
-  }
-  .hero-section {
-    height: 100vh;
->>>>>>> 7f6b8c65bb2e1c334f287d6372f7f1af8201ee25
-  }
-}
-@media screen and (orientation: landscape) {
-  .hero-section {
-    height: 100vh;
-  }
-  .hero-section h1 {
-    padding-top: 20%;
   }
 }
 
@@ -115,7 +101,7 @@ body {
 .top-h1 {
   color: var(--text-color2);
   font-family: 'Great Vibes', cursive;
-  font-size: 50px;
+  font-size: 45px;
 }
 .top-h4 {
   color: var(--bg-color3);

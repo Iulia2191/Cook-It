@@ -59,11 +59,7 @@ body {
   flex: 1 1 50%;
   margin-bottom: 10px;
 }
-<<<<<<< HEAD
-@media (max-width: 768px) {
-=======
 @media (max-width: 758px) {
->>>>>>> 7f6b8c65bb2e1c334f287d6372f7f1af8201ee25
   h2 {
     font-size: 20px;
   }
@@ -71,9 +67,6 @@ body {
     height: auto;
     margin-left: 2%;
     margin-right: 2%;
-  }
-  body {
-    height: 120vh;
   }
   body {
     height: 120vh;

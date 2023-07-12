@@ -188,6 +188,6 @@ footer p {
 }
 @media (max-width: 768px) {
   footer {
-    height: 350px;
+    height: 300px;
   }
 }
