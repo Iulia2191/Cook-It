@@ -123,18 +123,23 @@ nav ul a {
   width: 60px;
   border-radius: 6px;
 }
+@media (max-width: 768px) {
+  .input-box {
+    width: 40%;
+  }
+}
 
 /* Footer */
 footer {
   margin-top: auto;
-  min-height: 150px;
-  height: fit-content;
+  min-height: 230px;
+  height: max-content;
   background-color: var(--bg-color2);
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 3%;
-  margin-top: 0;
+  margin-bottom: 0;
 }
 footer p {
   text-align: justify;
@@ -180,4 +185,9 @@ footer p {
 }
 .subscribe-error-message p {
   margin-bottom: 0 !important;
+}
+@media (max-width: 768px) {
+  footer {
+    height: 350px;
+  }
 }

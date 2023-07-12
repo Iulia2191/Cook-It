@@ -13,9 +13,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 106vh;
+  height: 120vh;
   min-height: max-content;
-  max-height: max-content;
   display: flex;
   flex-direction: column;
 }
@@ -23,12 +22,12 @@ body {
   max-width: 100%;
   margin-bottom: 100px;
   width: fit-content;
-  max-height: max-content;
+  min-height: max-content;
   height: auto;
   color: var(--background1);
-  margin-top: 230px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-top: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.8),
@@ -60,18 +59,17 @@ body {
   flex: 1 1 50%;
   margin-bottom: 10px;
 }
-@media (max-width: 920px) {
+@media (max-width: 758px) {
   h2 {
     font-size: 20px;
   }
   .fridge {
-    margin-top: 150px;
-    height: max-content;
-    margin-left: 0;
-    margin-right: 0;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   body {
-    min-height: max-content;
+    height: 120vh;
   }
 }
 @media screen and (orientation: landscape) {

@@ -165,14 +165,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding-top: 100px;
-  padding-right: 100px;
+  padding-top: 10%;
+  padding-right: 10%;
 }
 .special-card {
   width: 400px;
   max-width: 100%;
   height: max-content;
-  padding-top: 30px;
   z-index: 5;
   background: linear-gradient(
     to right bottom,
@@ -207,6 +206,8 @@ body {
 @media screen and (orientation: landscape) {
   .special-card {
     max-height: min-content;
+    margin-bottom: 5%;
+    margin-top: 5%;
   }
   .today-special {
     height: min-content;
@@ -215,7 +216,7 @@ body {
 
 @media (max-width: 768px) {
   .special-container {
-    padding-top: 50px;
-    padding-right: 50px;
+    padding-top: 5%;
+    padding-right: 5%;
   }
 }
