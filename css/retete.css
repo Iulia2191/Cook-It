@@ -15,7 +15,7 @@ body {
   letter-spacing: 1.5px;
 }
 .hero-section {
-  height: 70vh;
+  height: 90vh;
   background-image: url(/img/background-index.jpeg);
   background-size: cover;
   background-position: center;

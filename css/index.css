@@ -69,15 +69,30 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .cta-text {
+<<<<<<< HEAD
     padding-top: 180px;
+=======
+    padding-top: 280px;
+>>>>>>> 7f6b8c65bb2e1c334f287d6372f7f1af8201ee25
   }
   .cta-btn {
     width: 50%;
   }
   .hero-section {
     height: 80vh;
+<<<<<<< HEAD
+=======
+  }
+}
+@media screen and (orientation: landscape) {
+  .cta-text {
+    padding-top: 20%;
+  }
+  .hero-section {
+    height: 100vh;
+>>>>>>> 7f6b8c65bb2e1c334f287d6372f7f1af8201ee25
   }
 }
 @media screen and (orientation: landscape) {
@@ -166,14 +181,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding-top: 100px;
-  padding-right: 100px;
+  padding-top: 10%;
+  padding-right: 10%;
 }
 .special-card {
   width: 400px;
   max-width: 100%;
   height: max-content;
-  padding-top: 30px;
   z-index: 5;
   background: linear-gradient(
     to right bottom,
@@ -208,8 +222,8 @@ body {
 @media screen and (orientation: landscape) {
   .special-card {
     max-height: min-content;
-    position: relative;
-    top: -100px;
+    margin-bottom: 5%;
+    margin-top: 5%;
   }
   .today-special {
     height: min-content;
@@ -218,7 +232,7 @@ body {
 
 @media (max-width: 768px) {
   .special-container {
-    padding-top: 50px;
-    padding-right: 50px;
+    padding-top: 5%;
+    padding-right: 5%;
   }
 }
