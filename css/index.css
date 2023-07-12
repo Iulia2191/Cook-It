@@ -69,15 +69,23 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .cta-text {
-    padding-top: 250px;
+    padding-top: 280px;
   }
   .cta-btn {
     width: 50%;
   }
   .hero-section {
-    height: 70vh;
+    height: 80vh;
+  }
+}
+@media screen and (orientation: landscape) {
+  .cta-text {
+    padding-top: 20%;
+  }
+  .hero-section {
+    height: 100vh;
   }
 }
 /* Top-three Section */
