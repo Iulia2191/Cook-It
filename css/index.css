@@ -199,8 +199,6 @@ body {
 @media screen and (orientation: landscape) {
   .special-card {
     max-height: min-content;
-    position: relative;
-    top: -100px;
   }
   .today-special {
     height: min-content;

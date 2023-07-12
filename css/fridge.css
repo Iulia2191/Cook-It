@@ -3,7 +3,11 @@
   --text-color: whitesmoke;
   --text-color2: #f3c376;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-image: url(../img/fridge-background.jpg);
   background-size: cover;
