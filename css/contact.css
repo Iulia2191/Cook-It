@@ -24,7 +24,7 @@ body {
   margin-bottom: 100px;
   width: fit-content;
   max-height: max-content;
-  margin-top: 200px;
+  margin-top: 1500px;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.9),
@@ -78,4 +78,18 @@ body {
   position: absolute;
   right: 45px;
   bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .contact-form-section {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-form-section {
+    margin-top: 100px;
+  }
+  .message-container {
+    position: relative;
+    top: -300px;
+  }
 }

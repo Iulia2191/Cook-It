@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-  padding-top: 20%;
+  padding-top: 150px;
   color: var(--text-color);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
@@ -45,8 +45,8 @@ h3 {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: larger;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .video {
   max-width: 100% !important;
@@ -55,16 +55,21 @@ h3 {
 
 @media (max-width: 768px) {
   .row {
-    margin: 10px !important;
-  }
-  .reteta-ingrediente {
-    margin-left: 0 !important;
+    margin: 5px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
   }
   .video {
     margin-left: 0 !important;
+    padding-left: 0 !important;
   }
   h1 {
     padding-top: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    padding-top: 20%px;
   }
 }
 /* Rating */

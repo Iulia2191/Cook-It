@@ -2,11 +2,12 @@ const search = document.getElementById('search')
 const cardsContainer = document.querySelector('.retete-cards .row')
 const cards = document.querySelectorAll('.card')
 const searchButton = document.querySelector('#search-button')
+const noResultsMessage = document.querySelector('#no-results-message')
 
 // Search input
-
 function performSearch () {
   const currentValue = search.value.toLowerCase()
+  let hasResults = false
 
   cards.forEach(function (card) {
     const cardTitle = card.querySelector('h5')
@@ -15,10 +16,17 @@ function performSearch () {
     if (titleText.includes(currentValue)) {
       card.style.display = 'block'
       cardsContainer.insertBefore(card, cardsContainer.firstChild)
+      hasResults = true
     } else {
       card.style.display = 'none'
     }
   })
+
+  if (!hasResults) {
+    noResultsMessage.style.display = 'block'
+  } else {
+    noResultsMessage.style.display = 'none'
+  }
 }
 
 const urlParams = new URLSearchParams(window.location.search)
@@ -31,6 +39,7 @@ if (searchQuery) {
 searchButton.addEventListener('click', function (e) {
   performSearch()
 })
+
 search.addEventListener('keyup', function (e) {
   performSearch()
 })
