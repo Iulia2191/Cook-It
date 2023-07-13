@@ -89,9 +89,9 @@ body {
     height: 80vh;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 700px) {
   .cta-text {
-    padding-top: 20%;
+    padding-top: 30%;
   }
 }
 /* Top-three Section */
@@ -216,10 +216,10 @@ body {
     margin-top: 5%;
   }
   .today-special {
-    height: min-content;
+    height: fit-content;
   }
   .cta-text {
-    padding-top: 20;
+    padding-top: 20%;
   }
 }
 

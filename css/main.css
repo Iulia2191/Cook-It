@@ -60,7 +60,7 @@ nav ul a {
   background-color: #1d1c1c !important;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   #nav {
     background-color: #1d1c1c !important;
   }
