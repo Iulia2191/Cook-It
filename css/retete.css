@@ -52,16 +52,7 @@ h3 {
   max-width: 100% !important;
   z-index: 3;
 }
-.favorite-btn {
-  width: 30%;
-  max-width: 100%;
-  z-index: 3;
-  cursor: pointer;
-  border-radius: 6px;
-  background-color: var(--text-color2);
-  padding: 7px 10px 7px 10px;
-  border: none;
-}
+
 @media (max-width: 768px) {
   .row {
     margin: 10px !important;

@@ -50,12 +50,23 @@ function submitSearchForm (event) {
 // Animatie Logo
 
 window.addEventListener('scroll', function () {
-  var logo = document.getElementById('logo')
+  const logo = document.getElementById('logo')
 
   if (window.scrollY > 0) {
     logo.classList.remove('large')
   } else {
     logo.classList.add('large')
+  }
+})
+// Navbar Background
+
+window.addEventListener('scroll', function () {
+  const navBar = document.querySelector('#nav')
+
+  if (window.scrollY > 0) {
+    navBar.classList.add('scrolling')
+  } else {
+    navBar.classList.remove('scrolling')
   }
 })
 
