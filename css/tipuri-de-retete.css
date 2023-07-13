@@ -70,7 +70,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.btn {
+.card-body .btn {
   position: absolute;
   bottom: 80px;
   left: 15px;
