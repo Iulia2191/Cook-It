@@ -59,14 +59,14 @@ function createRecipeCard (recipe, index) {
   title.textContent = recipe.title
   card.appendChild(title)
 
-  // Buton Vezi reteta
+  // Buton 'Vezi reteta'
   const link = document.createElement('a')
   link.classList.add('btn')
   link.setAttribute('href', recipe.recipeUrl)
   link.textContent = 'Vezi reteta'
   card.appendChild(link)
 
-  // Buton Sterge
+  // Buton 'Sterge'
   const removeButton = document.createElement('button')
   removeButton.classList.add('remove-btn')
   removeButton.textContent = 'Sterge'

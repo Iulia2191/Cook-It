@@ -6,7 +6,7 @@ const submitContainer = document.querySelector('.submit-container')
 const searchForm = document.getElementById('search-form')
 const searchInput = document.getElementById('search-input')
 
-// Email validation
+// Email validation Subscribe Input
 function validateEmail () {
   var validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -39,7 +39,7 @@ function handleEnter (event) {
 subscribeButton.addEventListener('click', handleClick)
 subscribeInput.addEventListener('keydown', handleEnter)
 
-// Search
+// Search Input Navbar
 function submitSearchForm (event) {
   event.preventDefault()
   const searchInputValue = searchInput.value
