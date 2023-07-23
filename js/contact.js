@@ -84,11 +84,7 @@ submitButton.addEventListener('click', function (event) {
   }
 })
 
-<<<<<<< Updated upstream
 // Textarea numar caractere
-
-=======
->>>>>>> Stashed changes
 const characterCount = document.getElementById('characterCount')
 const totalChars = 20
 
