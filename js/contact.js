@@ -81,6 +81,7 @@ submitButton.addEventListener('click', function (event) {
   if (validateName() && validateEmail() && validateMessage()) {
     contactContainer.style.opacity = '0'
     messageContainer.style.opacity = '1'
+    sendMail()
   }
 })
 
@@ -93,3 +94,26 @@ message.addEventListener('input', function () {
   const count = text.length
   characterCount.textContent = +count + '/' + totalChars
 })
+
+// Send Email
+
+function sendMail () {
+  var params = {
+    name: userName.value,
+    email: email.value,
+    message: message.value
+  }
+
+  const serviceID = 'service_vqli5uo'
+  const templateID = 'template_jif4bgl'
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then(res => {
+      document.getElementById('name').value = ''
+      document.getElementById('email').value = ''
+      document.getElementById('message').value = ''
+      console.log(res)
+    })
+    .catch(err => console.log(err))
+}
